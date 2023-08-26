@@ -1,8 +1,9 @@
 import React, { useEffect, useState } from 'react'
 import Hero from '../../components/Hero'
-import Products from '../../components/Products'
-import FeaturesCart from '../../components/Features'
+import Products from '../../components/ProductCard'
+import FeaturesCart from '../../components/Featurecard'
 import States from '../../components/StatCart'
+import ProductCard from '../../components/ProductCard'
 
 const Home = () => {
     const [products , setProducts] = useState([])
@@ -23,7 +24,7 @@ const Home = () => {
                 <h1 className="sm:text-3xl text-2xl font-medium title-font text-gray-900">ALL PUPULAR PRODUCTS</h1>
             </div>{
                 products.length > 0 ?
-                <Products products={products}/>
+                <ProductCard products={products}/>
                 :
                 <div>Loading.....</div>
             }
