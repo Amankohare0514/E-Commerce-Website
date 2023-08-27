@@ -15,7 +15,7 @@ import { Link } from 'react-router-dom';
 
 export default function Cart() {
   const carts = JSON.parse(localStorage.getItem('cart')) || []
-  if(!carts.length) <div>Cart is Empty</div>
+  if(!carts.length) <h1>Cart is Empty</h1>
 
   return (
     <section className="vh-100" style={{ backgroundColor: "#fdccbc" }}>
