@@ -88,7 +88,11 @@ export default function Cart() {
                 Continue shopping
               </MDBBtn>
               </Link>
-              <MDBBtn size="lg">Add to cart</MDBBtn>
+               <div>
+                <Link to={"/"}>
+               <MDBBtn size="lg">Home</MDBBtn>
+               </Link>
+               </div>
             </div>
           </MDBCol>
         </MDBRow>

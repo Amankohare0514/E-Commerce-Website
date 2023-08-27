@@ -8,8 +8,8 @@ const FeatureCard = ({ cards = [1, 2, 3] }) => {
             <section className="text-gray-600 body-font cursor-pointer">
                 <div className="container px-5 py-24 mx-auto">
                     <div className="flex flex-col text-center w-full mb-20">
-                        <h2 className="text-xs text-indigo-500 tracking-widest font-medium title-font mb-1">ROOF PARTY POLAROID</h2>
-                        <h1 className="sm:text-3xl text-2xl font-medium title-font text-gray-900">Master Cleanse Reliac Heirloom</h1>
+                        <h2 className=" text-indigo-500 tracking-widest text-1xl title-font mb-1">Categories</h2>
+                        <h1 className="sm:text-3xl text-2xl font-medium title-font text-gray-900">THE CATEGORIES OF FASHION</h1>
                     </div>
                     <div className="flex flex-wrap -m-4">
                         {
@@ -26,8 +26,8 @@ const FeatureCard = ({ cards = [1, 2, 3] }) => {
                                                 <h2 className="text-gray-900 text-lg title-font font-medium capitalize">{cards || 'example card'}</h2>
                                             </div>
                                             <div className="flex-grow">
-                                                <p className="leading-relaxed text-base">Blue bottle crucifix vinyl post-ironic four dollar toast vegan taxidermy. Gastropub indxgo juice poutine.</p>
-                                                <a className="mt-3 text-indigo-500 inline-flex items-center">Learn More
+                                                <p className="leading-relaxed text-base">The world of commerce has undergone a significant transformation with the advent of e-commerce websites.</p>
+                                                <a className="mt-3 text-indigo-500 inline-flex items-center">See More
                                                     <svg fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" className="w-4 h-4 ml-2" viewBox="0 0 24 24">
                                                         <path d="M5 12h14M12 5l7 7-7 7"></path>
                                                     </svg>
@@ -38,7 +38,6 @@ const FeatureCard = ({ cards = [1, 2, 3] }) => {
                                 )
                             }))
                         }
-
                     </div>
                 </div>
             </section>
