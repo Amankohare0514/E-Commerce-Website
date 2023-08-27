@@ -1,9 +1,11 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
+import Categories from '../Categories'
 
 const FeatureCard = ({ cards = [1, 2, 3] }) => {
     return (
-        <div>
-            <section className="text-gray-600 body-font">
+        <Link to={`/Categories/${cards}`}>
+            <section className="text-gray-600 body-font cursor-pointer">
                 <div className="container px-5 py-24 mx-auto">
                     <div className="flex flex-col text-center w-full mb-20">
                         <h2 className="text-xs text-indigo-500 tracking-widest font-medium title-font mb-1">ROOF PARTY POLAROID</h2>
@@ -21,7 +23,7 @@ const FeatureCard = ({ cards = [1, 2, 3] }) => {
                                                         <path d="M22 12h-4l-3 9L9 3l-3 9H2"></path>
                                                     </svg>
                                                 </div>
-                                                <h2 className="text-gray-900 text-lg title-font font-medium">Shooting Stars</h2>
+                                                <h2 className="text-gray-900 text-lg title-font font-medium capitalize">{cards || 'example card'}</h2>
                                             </div>
                                             <div className="flex-grow">
                                                 <p className="leading-relaxed text-base">Blue bottle crucifix vinyl post-ironic four dollar toast vegan taxidermy. Gastropub indxgo juice poutine.</p>
@@ -40,7 +42,7 @@ const FeatureCard = ({ cards = [1, 2, 3] }) => {
                     </div>
                 </div>
             </section>
-        </div>
+        </Link>
     )
 }
 
